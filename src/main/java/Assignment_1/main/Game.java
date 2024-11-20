@@ -37,7 +37,7 @@ public class Game extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        int tileSize = 50;
+        int tileSize = 60;
         Canvas canvas = new Canvas(map.tiles[0].length * tileSize, map.tiles.length * tileSize);
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
