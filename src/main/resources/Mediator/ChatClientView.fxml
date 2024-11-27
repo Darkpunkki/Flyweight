@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="Mediator.ChatClientController" xmlns:fx="http://javafx.com/fxml">
+    <Label text="Chat Messages"/>
+    <ListView fx:id="messageListView" prefHeight="200.0"/>
+    <HBox spacing="5">
+        <Label text="Message:"/>
+        <TextField fx:id="messageField" HBox.hgrow="ALWAYS"/>
+        <Label text="To:"/>
+        <ComboBox fx:id="recipientComboBox" prefWidth="120"/>
+        <Button fx:id="sendButton" text="Send" onAction="#handleSendButtonAction"/>
+    </HBox>
+</VBox>
