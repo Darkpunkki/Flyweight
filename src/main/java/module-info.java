@@ -8,6 +8,7 @@ module org.example.flyweight {
     exports org.example.flyweight;
     exports Assignment_1.main;
     exports Mediator;
+    exports Command;
 
     opens Mediator to javafx.fxml, javafx.graphics;
 
